@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+:root {
+  /* AVERO Design System */
+  --bg-primary: #050505;
+  --bg-secondary: #0F0F0F;
+  --border: #1F1F1F;
+  --text-primary: #FAFAFA;
+  --text-secondary: #A1A1AA;
+  --accent: #E4E4E7;
+
+  /* Shorthand for Tailwind */
+  --background: var(--bg-primary);
+  --foreground: var(--text-primary);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* AVERO Colors */
+  --color-avero-black: #050505;
+  --color-avero-charcoal: #0F0F0F;
+  --color-avero-border: #1F1F1F;
+  --color-avero-white: #FAFAFA;
+  --color-avero-silver: #A1A1AA;
+  --color-avero-accent: #E4E4E7;
+
+  /* Typography */
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* Selection */
+::selection {
+  background: var(--accent);
+  color: var(--bg-primary);
+}
