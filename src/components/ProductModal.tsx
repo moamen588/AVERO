@@ -9,7 +9,7 @@ import { useCartStore } from "@/store/cart";
 const fabricDetails: Record<string, string[]> = {
   hoodies: ["Heavyweight French Terry or Fleece", "Reinforced ribbed cuffs & hem", " kangaroo pocket / split pockets", "Brushed interior for softness"],
   tees: ["Combed or Pima Cotton", "Reinforced collar (no stretch)", "Double-stitched hems", "Pre-shrunk construction"],
-  bottoms: ["Ripstop Nylon or French Terry", "Elastic / adjustable waistband", "Tapered or relaxed fit", "Multiple utility pockets"],
+  pants: ["Ripstop Nylon or French Terry", "Elastic / adjustable waistband", "Tapered or relaxed fit", "Multiple utility pockets"],
   outerwear: ["Water-resistant shell", "Satin or mesh lining", "Heavy-duty YKK zippers", "Adjustable cuffs & hem"],
 };
 

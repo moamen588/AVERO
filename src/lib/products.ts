@@ -138,7 +138,6 @@ export const categories: { label: string; value: FilterCategory }[] = [
   { label: "All", value: "all" },
   { label: "Hoodies", value: "hoodies" },
   { label: "Tees", value: "tees" },
-  { label: "Leggings", value: "pants" },
-  { label: "Bottoms", value: "pants" },
+  { label: "Pants", value: "pants" },
   { label: "Outerwear", value: "outerwear" },
 ];
