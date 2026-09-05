@@ -1,4 +1,4 @@
-export type Category = "hoodies" | "tees" | "bottoms" | "outerwear";
+export type Category = "hoodies" | "tees" | "pants" | "outerwear";
 export type FilterCategory = Category | "all";
 
 export interface Product {
@@ -90,7 +90,7 @@ export const products: Product[] = [
       ],
     }),
 
-  item("p5", "Relaxed Cargo Pants", "bottoms", 1199, "Ripstop Nylon",
+  item("p5", "Relaxed Cargo Pants", "pants", 1199, "Ripstop Nylon",
     "https://images.unsplash.com/photo-1542272604-787c3835535d?q=80&w=600&fit=crop",
     {
       isBestSeller: true,
@@ -101,7 +101,7 @@ export const products: Product[] = [
       ],
     }),
 
-  item("p6", "Tapered Track Pants", "bottoms", 999, "300 GSM French Terry",
+  item("p6", "Tapered Track Pants", "pants", 999, "300 GSM French Terry",
     "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?q=80&w=600&fit=crop",
     {
       isNew: true,
@@ -138,6 +138,7 @@ export const categories: { label: string; value: FilterCategory }[] = [
   { label: "All", value: "all" },
   { label: "Hoodies", value: "hoodies" },
   { label: "Tees", value: "tees" },
-  { label: "Bottoms", value: "bottoms" },
+  { label: "Leggings", value: "pants" },
+  { label: "Bottoms", value: "pants" },
   { label: "Outerwear", value: "outerwear" },
 ];
